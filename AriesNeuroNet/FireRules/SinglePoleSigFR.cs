@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace AriesNeuroNet
+namespace AriesNeuroNet.FireRules
 {
-    public class Class1
+    public class SinglePoleSigFR : FireRuleBase
     {
-        Random rand = new Random();
+
     }
 }

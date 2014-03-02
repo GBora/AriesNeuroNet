@@ -17,9 +17,9 @@ namespace AriesNeuroNet.Neuron
         public int maxWeight { get; set; }
         public int minWeight { get; set; }
 
-        // The output is also a list of ports
+        // The output is also a port
         public NeuronPort output;
-        public double threshold { get; set; }
+ 
 
         public string label { get; set; }
         public FireRuleBase fireRule { get; set; }
@@ -75,8 +75,6 @@ namespace AriesNeuroNet.Neuron
             report += "Min weight allowed: " + this.minWeight + "\n";
 
             report += "Max weight allowed: " + this.maxWeight + "\n";
-
-            report += "Threshold: " + this.threshold + "\n";
 
             report += "Inputs: \n";
 

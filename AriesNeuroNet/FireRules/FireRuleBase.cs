@@ -8,6 +8,8 @@ namespace AriesNeuroNet.FireRules
 {
     public abstract class FireRuleBase
     {
+        public double threshold { get; set; }
+
         public virtual double fireNeuron(List<NeuronPort> neuronInputs)
         {
             throw new NotImplementedException();

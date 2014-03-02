@@ -40,8 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="FireRules\FireRuleBase.cs" />
+    <Compile Include="FireRules\SinglePoleFR.cs" />
+    <Compile Include="FireRules\SinglePoleSigFR.cs" />
     <Compile Include="InputOutputs\NeuronPort.cs" />
     <Compile Include="Neurons\NeuronBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
