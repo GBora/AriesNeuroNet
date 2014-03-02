@@ -1,4 +1,4 @@
-c:\users\george\documents\visual studio 2010\Projects\AriesNeuroNet\AriesNeuroNet\bin\Debug\AriesNeuroNet.dll
-c:\users\george\documents\visual studio 2010\Projects\AriesNeuroNet\AriesNeuroNet\bin\Debug\AriesNeuroNet.pdb
-c:\users\george\documents\visual studio 2010\Projects\AriesNeuroNet\AriesNeuroNet\obj\Debug\AriesNeuroNet.dll
-c:\users\george\documents\visual studio 2010\Projects\AriesNeuroNet\AriesNeuroNet\obj\Debug\AriesNeuroNet.pdb
+C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\AriesNeuroNet\bin\Debug\AriesNeuroNet.dll
+C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\AriesNeuroNet\bin\Debug\AriesNeuroNet.pdb
+C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\AriesNeuroNet\obj\Debug\AriesNeuroNet.dll
+C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\AriesNeuroNet\obj\Debug\AriesNeuroNet.pdb

@@ -9,7 +9,7 @@ namespace AriesNeuroNet.Neuron
 {
     public abstract class NeuronBase
     {
-        // The random is for initializing the ranodw weights when needed
+        // The random is for initializing the random weights when needed
         private Random rand = new Random();
 
         // The input is only a list of ports
@@ -42,7 +42,21 @@ namespace AriesNeuroNet.Neuron
 
         public virtual void setInputValues(List<double> inputValues)
         {
-            throw new NotImplementedException();
+            for (int i = 0; i < this.inputs.Count; i++)
+            {
+                if (i < inputValues.Count && inputValues[i] != null)
+                {
+                    this.inputs[i].reading = inputValues[i];
+                }
+                else
+                {
+                    // Checks if input has a reading and if not sets it at 0 
+                    if (this.inputs[i].reading == null)
+                    {
+                        this.inputs[i].reading = 0;
+                    }
+                }
+            }
         }
 
         #region Functions for adding new inputs and output
