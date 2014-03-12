@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AriesNeuroNet", "AriesNeuro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleNeuronTest", "SingleNeuronTest\SingleNeuronTest.csproj", "{3AEB5028-748F-4C92-AC24-1CAE16C548A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkTest", "NetworkTest\NetworkTest.csproj", "{FD320D7F-7CA4-491B-9CF4-DD844CBEB66A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,16 @@ Global
 		{3AEB5028-748F-4C92-AC24-1CAE16C548A8}.Release|Mixed Platforms.Build.0 = Release|x86
 		{3AEB5028-748F-4C92-AC24-1CAE16C548A8}.Release|x86.ActiveCfg = Release|x86
 		{3AEB5028-748F-4C92-AC24-1CAE16C548A8}.Release|x86.Build.0 = Release|x86
+		{FD320D7F-7CA4-491B-9CF4-DD844CBEB66A}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{FD320D7F-7CA4-491B-9CF4-DD844CBEB66A}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{FD320D7F-7CA4-491B-9CF4-DD844CBEB66A}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{FD320D7F-7CA4-491B-9CF4-DD844CBEB66A}.Debug|x86.ActiveCfg = Debug|x86
+		{FD320D7F-7CA4-491B-9CF4-DD844CBEB66A}.Debug|x86.Build.0 = Debug|x86
+		{FD320D7F-7CA4-491B-9CF4-DD844CBEB66A}.Release|Any CPU.ActiveCfg = Release|x86
+		{FD320D7F-7CA4-491B-9CF4-DD844CBEB66A}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{FD320D7F-7CA4-491B-9CF4-DD844CBEB66A}.Release|Mixed Platforms.Build.0 = Release|x86
+		{FD320D7F-7CA4-491B-9CF4-DD844CBEB66A}.Release|x86.ActiveCfg = Release|x86
+		{FD320D7F-7CA4-491B-9CF4-DD844CBEB66A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,7 +5,7 @@ using System.Text;
 using AriesNeuroNet.InputOutput;
 using AriesNeuroNet.FireRules;
 
-namespace AriesNeuroNet.Neuron
+namespace AriesNeuroNet.Neurons
 {
     public abstract class NeuronBase
     {

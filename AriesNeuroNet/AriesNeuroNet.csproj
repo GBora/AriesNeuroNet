@@ -44,9 +44,16 @@
     <Compile Include="FireRules\SinglePoleFR.cs" />
     <Compile Include="FireRules\SinglePoleSigFR.cs" />
     <Compile Include="InputOutputs\NeuronPort.cs" />
+    <Compile Include="Network\Layer.cs" />
+    <Compile Include="Network\NetworkBase.cs" />
+    <Compile Include="Network\PerceptronNetwork.cs" />
     <Compile Include="Neurons\Neuron.cs" />
     <Compile Include="Neurons\NeuronBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Training\PerceptronTrainer.cs" />
+    <Compile Include="Training\TrainerBase.cs" />
+    <Compile Include="Training\TrainingRow.cs" />
+    <Compile Include="Training\TrainingTemplate.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -6,7 +6,7 @@ using AriesNeuroNet.Training;
 
 namespace AriesNeuroNet.Network
 {
-    public virtual class NetworkBase
+    public abstract class NetworkBase
     {
         public string label { get; set; }
 

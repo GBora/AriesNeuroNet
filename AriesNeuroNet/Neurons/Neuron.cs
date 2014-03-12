@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using AriesNeuroNet.Neuron;
+using AriesNeuroNet.Neurons;
 using AriesNeuroNet.InputOutput;
 using AriesNeuroNet.FireRules;
 

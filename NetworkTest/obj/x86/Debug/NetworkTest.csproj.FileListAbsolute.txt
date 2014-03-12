@@ -1,0 +1,7 @@
+C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\NetworkTest\bin\Debug\NetworkTest.exe
+C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\NetworkTest\bin\Debug\NetworkTest.pdb
+C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\NetworkTest\bin\Debug\AriesNeuroNet.dll
+C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\NetworkTest\bin\Debug\AriesNeuroNet.pdb
+C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\NetworkTest\obj\x86\Debug\NetworkTest.exe
+C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\NetworkTest\obj\x86\Debug\NetworkTest.pdb
+C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\NetworkTest\obj\x86\Debug\NetworkTest.csprojResolveAssemblyReference.cache
