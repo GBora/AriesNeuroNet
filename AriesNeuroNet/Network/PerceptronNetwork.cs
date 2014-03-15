@@ -9,9 +9,9 @@ namespace AriesNeuroNet.Network
 {
     public class PerceptronNetwork : NetworkBase
     {
-        Neuron perceptron { get; set; }
+        public Neuron perceptron { get; set; }
 
-        public PerceptronTrainer trainingMethod;
+        public PerceptronTrainer trainingMethod = new PerceptronTrainer();
 
 
         public PerceptronNetwork(Neuron aNeuron)
@@ -19,10 +19,10 @@ namespace AriesNeuroNet.Network
             this.perceptron = aNeuron;
         }
 
-        public double train(TrainingTemplate trainingTemplate, int extmaxGenerations)
+        public double train(TrainingTemplate trainingTemplate, int extMaxGenerations)
         {
             //This is simple but the ideea is suposed to be that in larger networks here I do a foreach over the neurons
-            double error =  this.trainingMethod.trainNetwork(trainingTemplate, this.perceptron, extmaxGenerations);
+            double error =  this.trainingMethod.trainNetwork(trainingTemplate, perceptron, extMaxGenerations);
             return error;
         }
     }

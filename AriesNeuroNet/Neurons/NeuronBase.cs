@@ -14,8 +14,8 @@ namespace AriesNeuroNet.Neurons
 
         // The input is only a list of ports
         public List<NeuronPort> inputs;
-        public int maxWeight { get; set; }
-        public int minWeight { get; set; }
+        public double maxWeight { get; set; }
+        public double minWeight { get; set; }
 
         // The output is also a port
         public NeuronPort output;

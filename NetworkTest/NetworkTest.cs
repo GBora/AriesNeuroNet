@@ -13,18 +13,25 @@ namespace NetworkTest
     {
         static void Main(string[] args)
         {
-            Neuron neuron = new Neuron("AND-Neuron",0,10);   
+            Neuron neuron = new Neuron("AND-Neuron",0,2);   
             neuron.addNewInput("input1",0, 0 );
-            neuron.addNewInput("input2", 0, 0);
+            neuron.addNewInput("input2",0, 0);
             PerceptronNetwork pn = new PerceptronNetwork(neuron);
 
             TrainingTemplate andTemplate = new TrainingTemplate("AND Template");
-            andTemplate.addTrainingRow(new TrainingRow(new List<double> { 0, 0 }, new List<double> { 0 }));
-            andTemplate.addTrainingRow(new TrainingRow(new List<double> { 0, 1 }, new List<double> { 0 }));
-            andTemplate.addTrainingRow(new TrainingRow(new List<double> { 1, 0 }, new List<double> { 0 }));
-            andTemplate.addTrainingRow(new TrainingRow(new List<double> { 1, 1 }, new List<double> { 0 }));
+            //andTemplate.addTrainingRow(new TrainingRow(new List<double> { 0, 0 }, new List<double> { 0 }));
+            //andTemplate.addTrainingRow(new TrainingRow(new List<double> { 0, 1 }, new List<double> { 0 }));
+            //andTemplate.addTrainingRow(new TrainingRow(new List<double> { 1, 0 }, new List<double> { 0 }));
+            andTemplate.addTrainingRow(new TrainingRow(new List<double> { 1, 1 }, new List<double> { 1 }));
 
-            Console.WriteLine("After 100 generations error is " + pn.train(andTemplate, 1000));
+
+            //Create a simpler template and see what happens
+            Console.WriteLine("After 100000 generations error is " + pn.train(andTemplate, 100000));
+            Console.WriteLine(neuron);
+            Console.ReadKey();
+
+
+            //Problem is that singlepoleFR returns 1 if sum is greater than 0 obviously this sucks for when I need precision TODO write transparent fire rule which returns the exact sum
 
         }
     }

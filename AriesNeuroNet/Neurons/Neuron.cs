@@ -18,7 +18,7 @@ namespace AriesNeuroNet.Neurons
             this.label = label;
             this.fireRule = new SinglePoleFR(0,0);
             this.inputs = new List<NeuronPort>();
-            this.output = new NeuronPort(0,0,(this.label + "-Output"));
+            this.output = new NeuronPort(1,0,(this.label + "-Output"));
         }
         #endregion
 
