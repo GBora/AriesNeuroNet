@@ -19,10 +19,10 @@ namespace NetworkTest
             PerceptronNetwork pn = new PerceptronNetwork(neuron);
 
             TrainingTemplate andTemplate = new TrainingTemplate("AND Template");
-            //andTemplate.addTrainingRow(new TrainingRow(new List<double> { 0, 0 }, new List<double> { 0 }));
+            andTemplate.addTrainingRow(new TrainingRow(new List<double> { 0, 0 }, new List<double> { 0 }));
             //andTemplate.addTrainingRow(new TrainingRow(new List<double> { 0, 1 }, new List<double> { 0 }));
             //andTemplate.addTrainingRow(new TrainingRow(new List<double> { 1, 0 }, new List<double> { 0 }));
-            andTemplate.addTrainingRow(new TrainingRow(new List<double> { 1, 1 }, new List<double> { 1 }));
+            //andTemplate.addTrainingRow(new TrainingRow(new List<double> { 1, 1 }, new List<double> { 1 }));
 
 
             //Create a simpler template and see what happens
@@ -31,7 +31,7 @@ namespace NetworkTest
             Console.ReadKey();
 
 
-            //Problem is that singlepoleFR returns 1 if sum is greater than 0 obviously this sucks for when I need precision TODO write transparent fire rule which returns the exact sum
+            
 
         }
     }

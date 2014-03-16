@@ -16,7 +16,7 @@ namespace AriesNeuroNet.Neurons
             this.minWeight = minWeight;
             this.maxWeight = maxWeight;
             this.label = label;
-            this.fireRule = new SinglePoleFR(0,0);
+            this.fireRule = new SumFireRule(0,0);
             this.inputs = new List<NeuronPort>();
             this.output = new NeuronPort(1,0,(this.label + "-Output"));
         }

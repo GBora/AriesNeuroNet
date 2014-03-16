@@ -43,6 +43,7 @@
     <Compile Include="FireRules\FireRuleBase.cs" />
     <Compile Include="FireRules\SinglePoleFR.cs" />
     <Compile Include="FireRules\SinglePoleSigFR.cs" />
+    <Compile Include="FireRules\SumFireRule.cs" />
     <Compile Include="InputOutputs\NeuronPort.cs" />
     <Compile Include="Network\Layer.cs" />
     <Compile Include="Network\NetworkBase.cs" />
