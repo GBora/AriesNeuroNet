@@ -130,5 +130,134 @@ namespace AriesNeuroNet.Training
             return error;
         }
 
+
+        public double trainNetwork2(TrainingTemplate trainingTemplate, AriesNeuroNet.Neurons.Neuron neuron, int maxGenerations)
+        {
+            int stableLimit = trainingTemplate.rows.Count;
+            int stableGenerations = 0;
+            int currentGeneration = 0;
+
+            double error = 0;
+
+            //We innitialize the flags
+            bool adjustedWeights = false;
+            bool stableGenFlag = true;
+            bool genLimitFlag = true;
+            bool templateFlag = false;
+
+            //Step 1 initialize the neurons to randomize weights
+            neuron.randomizeWeights();
+
+            /*
+             * Possible breaking mecanism 
+             * if(flag) {
+             * Console.Writeline(adequate message)
+             * return error
+             * which breaks the function
+             * }
+             * */
+
+
+
+            for (int currentRow = 0; currentRow < trainingTemplate.rows.Count; currentRow++)
+            {
+                // I extract the current row
+                TrainingRow row = trainingTemplate.rows[currentRow];
+
+                do
+                {
+                    // I begin a new generation
+                    Console.WriteLine("========================================================================");
+                    Console.WriteLine("Begining Generation: " + currentGeneration);
+                    Console.WriteLine("Current row: " + currentRow);
+
+                    // I reset the adjutedWeights flag
+                    adjustedWeights = false;
+
+                    // I set the inputs
+                    neuron.setInputValues(row.inputs);
+
+                    // I fire the neuron
+                    neuron.fireNeuron();
+
+                    // I get the expected output out of the template
+                    double expectedOutput = row.outputs[0];
+
+                    // I get the real output fromt he neuron
+                    double realOutput = neuron.output.weightedReading;
+
+                    Console.WriteLine("Output is " + realOutput);
+
+                    // I calculate the error
+                    error = expectedOutput - realOutput;
+
+                    Console.WriteLine("Error is " + error);
+
+                    // I make a decision based on the error
+
+                    if (error == 0)
+                    {
+                        Console.WriteLine("I have not found an error");
+                        stableGenerations++;
+                        // I set the flag so that I exit the while
+                        adjustedWeights = false;
+                    }
+                    else
+                    {
+                        Console.WriteLine("I found an error");
+                        Console.WriteLine("The error is " + error);
+                        // I reset the stable generations counter
+                        stableGenerations = 0;
+
+                        // These are for debugging purposes
+                        List<double> oldWeights = new List<double>();
+                        List<double> newWeights = new List<double>();
+
+                        // I mark that I needed to adjust the weights.
+                        adjustedWeights = true;
+                        //Do the heavy duty processing
+                        foreach (NeuronPort input in neuron.inputs)
+                        {
+                            oldWeights.Add(input.weight);
+                            input.weight += input.reading * learningRate * error; // To do finish this
+                            newWeights.Add(input.weight);
+                        }
+
+                        Console.WriteLine("I corrected with " + (learningRate * error));
+
+                        // I publish the old weights
+                        Console.WriteLine("Old weights: ");
+                        foreach (double weight in oldWeights)
+                        {
+                            Console.Write(weight + " ");
+                        }
+
+                        // I publish the new weights
+                        Console.WriteLine("New weights: " + newWeights);
+                        foreach (double weight in newWeights)
+                        {
+                            Console.Write(weight + " ");
+                        }
+                    }
+
+                    currentGeneration++;
+
+                    //the breaking conditions
+
+                    if (!stableGenFlag) { return error; }
+                    if (!genLimitFlag) { return error; }
+                    //TODO I need to increase the current gen flag
+
+                } while (adjustedWeights);
+
+                //maybe not necesary ???
+
+                if (!stableGenFlag) { return error; }
+                if (!genLimitFlag) { return error; }
+            }
+
+                return error;
+        }
+
     }
 }
