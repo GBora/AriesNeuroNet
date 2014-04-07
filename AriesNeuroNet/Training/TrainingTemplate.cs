@@ -8,7 +8,7 @@ namespace AriesNeuroNet.Training
     public class TrainingTemplate
     {
         public List<TrainingRow> rows { get; set; }
-        public string label;
+        public string Label {get; set;}
 
         public TrainingTemplate()
             : this("Anonymous training template", new List<TrainingRow>())
@@ -25,7 +25,7 @@ namespace AriesNeuroNet.Training
 
         public TrainingTemplate(string label, List<TrainingRow> rows)
         {
-            this.label = label;
+            this.Label = label;
             this.rows = rows;
         }
 

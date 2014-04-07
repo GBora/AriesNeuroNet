@@ -19,7 +19,9 @@ namespace AriesNeuroNet.Neurons
 
         // The output is also a port
         public NeuronPort output;
- 
+
+        // The bias is also a port
+        public NeuronPort bias;
 
         public string label { get; set; }
         public FireRuleBase fireRule { get; set; }

@@ -10,7 +10,7 @@ namespace AriesNeuroNet.FireRules
     {
 
         public double threshold { get; set; }
-        public double offset { get; set; }
+        public double bias { get; set; }
 
 
         public override double fireNeuron(List<NeuronPort> inputs)
@@ -22,7 +22,7 @@ namespace AriesNeuroNet.FireRules
                 sum += input.weightedReading;
             }
 
-            sum += offset;
+            sum += bias;
 
             return sum;
         }
@@ -32,7 +32,7 @@ namespace AriesNeuroNet.FireRules
 
         public SumFireRule(double offset, double threshold)
         {
-            this.offset = offset;
+            this.bias = offset;
             this.threshold = threshold;
         }
 
@@ -40,7 +40,7 @@ namespace AriesNeuroNet.FireRules
 
         public override string ToString()
         {
-            return "Sum Firing Rule Offset: " + this.offset + " Threshold(Internal) : " + this.threshold;
+            return "Sum Firing Rule Offset: " + this.bias + " Threshold(Internal) : " + this.threshold;
         }
     }
 }

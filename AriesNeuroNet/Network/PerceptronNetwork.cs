@@ -19,10 +19,10 @@ namespace AriesNeuroNet.Network
             this.perceptron = aNeuron;
         }
 
-        public double train(TrainingTemplate trainingTemplate, int extMaxGenerations)
+        public double train(TrainingTemplate trainingTemplate, int extMaxGenerations, ErrorHistory errorProg)
         {
             //This is simple but the ideea is suposed to be that in larger networks here I do a foreach over the neurons
-            double error =  this.trainingMethod.trainNetwork(trainingTemplate, perceptron, extMaxGenerations);
+            double error =  this.trainingMethod.trainNetwork(trainingTemplate, perceptron, extMaxGenerations, errorProg);
             return error;
         }
     }

@@ -2,3 +2,4 @@ C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\AriesNeuroNe
 C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\AriesNeuroNet\bin\Debug\AriesNeuroNet.pdb
 C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\AriesNeuroNet\obj\Debug\AriesNeuroNet.dll
 C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\AriesNeuroNet\obj\Debug\AriesNeuroNet.pdb
+C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\AriesNeuroNet\obj\Debug\AriesNeuroNet.csprojResolveAssemblyReference.cache

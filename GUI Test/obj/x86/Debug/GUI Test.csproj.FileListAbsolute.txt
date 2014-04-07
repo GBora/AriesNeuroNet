@@ -1,0 +1,10 @@
+C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\GUI Test\bin\Debug\GUI Test.exe
+C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\GUI Test\bin\Debug\GUI Test.pdb
+C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\GUI Test\bin\Debug\AriesNeuroNet.dll
+C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\GUI Test\bin\Debug\AriesNeuroNet.pdb
+C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\GUI Test\obj\x86\Debug\GUI Test.csprojResolveAssemblyReference.cache
+C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\GUI Test\obj\x86\Debug\GUI_Test.Form1.resources
+C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\GUI Test\obj\x86\Debug\GUI_Test.Properties.Resources.resources
+C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\GUI Test\obj\x86\Debug\GUI Test.csproj.GenerateResource.Cache
+C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\GUI Test\obj\x86\Debug\GUI Test.exe
+C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\GUI Test\obj\x86\Debug\GUI Test.pdb

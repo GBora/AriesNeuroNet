@@ -19,6 +19,7 @@ namespace AriesNeuroNet.Neurons
             this.fireRule = new SumFireRule(0,0);
             this.inputs = new List<NeuronPort>();
             this.output = new NeuronPort(1,0,(this.label + "-Output"));
+            this.bias = new NeuronPort(1, 0, (this.label + "-Bias"));
         }
         #endregion
 

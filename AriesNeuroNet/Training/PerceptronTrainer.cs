@@ -11,13 +11,16 @@ namespace AriesNeuroNet.Training
     {
         public double learningRate = 0.3;
 
-        public double trainNetwork(TrainingTemplate trainingTemplate, AriesNeuroNet.Neurons.Neuron neuron, int maxGenerations)
+
+        public double trainNetwork2(TrainingTemplate trainingTemplate, AriesNeuroNet.Neurons.Neuron neuron, int maxGenerations)
         {
             int stableLimit = trainingTemplate.rows.Count;
             int stableGenerations = 0;
             int currentGeneration = 0;
 
             int currentRow = 0;
+
+            List<double> errorHistory = new List<double>();
 
             //Step 1 initialize the neurons to randomize weights
             neuron.randomizeWeights();
@@ -131,13 +134,15 @@ namespace AriesNeuroNet.Training
         }
 
 
-        public double trainNetwork2(TrainingTemplate trainingTemplate, AriesNeuroNet.Neurons.Neuron neuron, int maxGenerations)
+        public double trainNetwork(TrainingTemplate trainingTemplate, AriesNeuroNet.Neurons.Neuron neuron, int maxGenerations, ErrorHistory errorProg)
         {
             int stableLimit = trainingTemplate.rows.Count;
             int stableGenerations = 0;
             int currentGeneration = 0;
 
             double error = 0;
+
+            List<double> errorHistory = new List<double>();
 
             //We innitialize the flags
             bool adjustedWeights = false;
@@ -167,9 +172,9 @@ namespace AriesNeuroNet.Training
                 do
                 {
                     // I begin a new generation
-                    Console.WriteLine("========================================================================");
-                    Console.WriteLine("Begining Generation: " + currentGeneration);
-                    Console.WriteLine("Current row: " + currentRow);
+                    //Console.WriteLine("========================================================================");
+                    //Console.WriteLine("Begining Generation: " + currentGeneration);
+                    //Console.WriteLine("Current row: " + currentRow);
 
                     // I reset the adjutedWeights flag
                     adjustedWeights = false;
@@ -191,41 +196,45 @@ namespace AriesNeuroNet.Training
                     // I calculate the error
                     error = expectedOutput - realOutput;
 
-                    Console.WriteLine("Error is " + error);
+                    //Console.WriteLine("Error is " + error);
 
                     // I make a decision based on the error
 
                     if (error == 0)
                     {
-                        Console.WriteLine("I have not found an error");
+                        //Console.WriteLine("I have not found an error");
                         stableGenerations++;
                         // I set the flag so that I exit the while
                         adjustedWeights = false;
                     }
                     else
                     {
-                        Console.WriteLine("I found an error");
-                        Console.WriteLine("The error is " + error);
+                        //Console.WriteLine("I found an error");
+                        //Console.WriteLine("The error is " + error);
                         // I reset the stable generations counter
                         stableGenerations = 0;
 
                         // These are for debugging purposes
-                        List<double> oldWeights = new List<double>();
-                        List<double> newWeights = new List<double>();
+                        //List<double> oldWeights = new List<double>();
+                        //List<double> newWeights = new List<double>();
 
                         // I mark that I needed to adjust the weights.
                         adjustedWeights = true;
                         //Do the heavy duty processing
                         foreach (NeuronPort input in neuron.inputs)
                         {
-                            oldWeights.Add(input.weight);
+                            //oldWeights.Add(input.weight);
                             input.weight += input.reading * learningRate * error; // To do finish this
-                            newWeights.Add(input.weight);
+                            //newWeights.Add(input.weight);
                         }
 
                         Console.WriteLine("I corrected with " + (learningRate * error));
 
+                        // I log the error to history
+                        errorHistory.Add(error);
+
                         // I publish the old weights
+                        /*
                         Console.WriteLine("Old weights: ");
                         foreach (double weight in oldWeights)
                         {
@@ -238,15 +247,28 @@ namespace AriesNeuroNet.Training
                         {
                             Console.Write(weight + " ");
                         }
+                         * */
                     }
 
+                    
+
+                    // I mark that I've finished these generation
                     currentGeneration++;
+
+                    //I check the conditions
+                    stableGenFlag = stableGenerations < stableLimit;
+                    genLimitFlag = currentGeneration < maxGenerations;
+                    templateFlag = currentRow < trainingTemplate.rows.Count;
+                    
 
                     //the breaking conditions
 
-                    if (!stableGenFlag) { return error; }
-                    if (!genLimitFlag) { return error; }
-                    //TODO I need to increase the current gen flag
+                    if (!stableGenFlag) {
+                        //Console.WriteLine("Ended due to stable limit gen") ; 
+                        return error; }
+                    if (!genLimitFlag) { 
+                        //Console.WriteLine("Ended due to limit of gens to train");
+                        return error; }
 
                 } while (adjustedWeights);
 
@@ -255,7 +277,7 @@ namespace AriesNeuroNet.Training
                 if (!stableGenFlag) { return error; }
                 if (!genLimitFlag) { return error; }
             }
-
+                errorProg.errorPoints = errorHistory;
                 return error;
         }
 
