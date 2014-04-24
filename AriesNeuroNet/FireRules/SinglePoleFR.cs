@@ -13,7 +13,7 @@ namespace AriesNeuroNet.FireRules
 
         //Start of Methods
 
-        public override double fireNeuron(List<NeuronPort> inputs)
+        public override double fireNeuron(List<NeuronPort> inputs, NeuronPort bias)
         {
             double sum = 0;
 

@@ -11,6 +11,8 @@ namespace AriesNeuroNet.InputOutput
 
         public double weight { get; set; }
 
+        public double gradient { get; set; }
+
         public string label { get; set; }
 
         public double weightedReading { get { return this.reading * this.weight; } }
@@ -30,6 +32,7 @@ namespace AriesNeuroNet.InputOutput
             this.label = label;
             this.weight = weight;
             this.reading = reading;
+            this.gradient = 0;
         }
 
         public NeuronPort(double weight, double reading)

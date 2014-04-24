@@ -16,7 +16,7 @@ namespace AriesNeuroNet.Neurons
             this.minWeight = minWeight;
             this.maxWeight = maxWeight;
             this.label = label;
-            this.fireRule = new SumFireRule(0,0);
+            this.fireRule = new SumFireRule(0);
             this.inputs = new List<NeuronPort>();
             this.output = new NeuronPort(1,0,(this.label + "-Output"));
             this.bias = new NeuronPort(1, 0, (this.label + "-Bias"));
@@ -25,7 +25,7 @@ namespace AriesNeuroNet.Neurons
 
         public override void fireNeuron()
         {
-            this.output.reading = this.fireRule.fireNeuron(this.inputs);
+            this.output.reading = this.fireRule.fireNeuron(this.inputs, this.bias);
         }
     }
 }

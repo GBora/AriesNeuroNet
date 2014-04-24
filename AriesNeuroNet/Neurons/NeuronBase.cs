@@ -23,6 +23,9 @@ namespace AriesNeuroNet.Neurons
         // The bias is also a port
         public NeuronPort bias;
 
+        //The nodeDelta for backtracking
+        public double nodeDelta;
+
         public string label { get; set; }
         public FireRuleBase fireRule { get; set; }
 
@@ -59,6 +62,20 @@ namespace AriesNeuroNet.Neurons
                     }
                 }
             }
+        }
+
+        public virtual double getWeightedReading()
+        {
+            double sum = 0;
+
+            for (int i = 0; i < this.inputs.Count; i++)
+            {
+                sum += this.inputs[i].weightedReading;
+            }
+
+            sum += this.bias.weightedReading;
+
+                return sum;
         }
 
         #region Functions for adding new inputs and output
