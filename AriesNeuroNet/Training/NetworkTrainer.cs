@@ -10,7 +10,8 @@ namespace AriesNeuroNet.Training
 {
     public class NetworkTrainer: TrainerBase
     {
-        public double learningRate = 0.3;
+        public double learningRate = 0.7;
+        public double moementum = 0.3;
         /// <summary>
         /// trains the netwrok though back propagation
         /// </summary>
@@ -118,11 +119,30 @@ namespace AriesNeuroNet.Training
 
                         //Calculate the gradient
 
+                        //For the output 
+
+                        outputNeuron.output.gradient = outputNeuron.output.weightedReading * outputNeuron.nodeDelta;
+
                         foreach (Neuron neuron in hiddenLayer.neurons)
                         {
 
                             neuron.output.gradient = neuron.output.weightedReading * outputNeuron.nodeDelta;
                         }
+
+                        //Calculate the new weights
+                        
+                        //For the output layer
+                        outputNeuron.deltaWeight = learningRate * outputNeuron.output.gradient + moementum * outputNeuron.deltaWeight;
+                        outputNeuron.output.weight += outputNeuron.deltaWeight;
+
+                        //for the hidden layer
+                        foreach (Neuron neuron in hiddenLayer.neurons)
+                        {
+                            neuron.deltaWeight = learningRate * neuron.output.gradient + moementum * neuron.deltaWeight;
+                            neuron.output.weight += neuron.deltaWeight;
+                        }
+
+                        //For the input layer ?
 
                     }
 

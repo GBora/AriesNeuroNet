@@ -26,6 +26,9 @@ namespace AriesNeuroNet.Neurons
         //The nodeDelta for backtracking
         public double nodeDelta;
 
+        //the delta weight for backtracking;
+        public double deltaWeight = 0;
+
         public string label { get; set; }
         public FireRuleBase fireRule { get; set; }
 
