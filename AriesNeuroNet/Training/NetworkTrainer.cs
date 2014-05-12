@@ -117,6 +117,14 @@ namespace AriesNeuroNet.Training
                                 // need to add sum of weights going out
                         }
 
+                        //EXperimental !!!
+                        foreach (Neuron neuron in inputLayer.neurons)
+                        {
+
+                            neuron.nodeDelta = outputNeuron.nodeDelta * (neuron.fireRule.fireNeuronDerivative(neuron.inputs, neuron.bias) + neuron.output.weight);
+                            // need to add sum of weights going out
+                        }
+
                         //Calculate the gradient
 
                         //For the output 
@@ -124,6 +132,13 @@ namespace AriesNeuroNet.Training
                         outputNeuron.output.gradient = outputNeuron.output.weightedReading * outputNeuron.nodeDelta;
 
                         foreach (Neuron neuron in hiddenLayer.neurons)
+                        {
+
+                            neuron.output.gradient = neuron.output.weightedReading * outputNeuron.nodeDelta;
+                        }
+
+                        //Experimental!!!
+                        foreach (Neuron neuron in inputLayer.neurons)
                         {
 
                             neuron.output.gradient = neuron.output.weightedReading * outputNeuron.nodeDelta;
@@ -143,6 +158,13 @@ namespace AriesNeuroNet.Training
                         }
 
                         //For the input layer ?
+
+                        foreach (Neuron neuron in inputLayer.neurons)
+                        {
+                            neuron.deltaWeight = learningRate * neuron.output.gradient + moementum * neuron.deltaWeight;
+                            neuron.output.weight += neuron.deltaWeight;
+                        }
+
 
                     }
 
@@ -174,6 +196,29 @@ namespace AriesNeuroNet.Training
 
             //IAppDomainSetup still need to return the error history
             return error;
-        }
+        } 
+
+
+       
+
+       double derivate(double X)
+       {
+           //1.0 - y**2
+           return 0;
+       }
+
+       double Sigmoid(double x)
+       {
+           return 1 / (1 + Math.Exp(x * -1));
+       }
+
+       double fireNeuronDerivative(double x)
+       {
+           double sum = 0;        
+           double s = Sigmoid(x);
+           sum += (s * (1 - s));
+           //sum += 1 / (1 + Math.Exp(bias.weightedReading *-1));
+           return sum;
+       }
     }
 }

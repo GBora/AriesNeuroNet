@@ -16,7 +16,8 @@ namespace AriesNeuroNet.Network
 
         public double train(TrainingTemplate trainingTemplate, int extMaxGenerations, ErrorHistory errorProg)
         {
-            return 0;
+            //Note to self 0.1 is right out of my ass
+            return trainer.trainNetwork(trainingTemplate,inputLayer,outputLayer,hiddenLayer,extMaxGenerations,0.1,errorProg);
         }
     }
 }
