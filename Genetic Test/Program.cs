@@ -12,19 +12,29 @@ using AForge.Math.Random;
 
 namespace Genetic_Test
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+            
+
             DoubleArrayChromosome weightValues = new DoubleArrayChromosome(new WeightRandomGenerator(),  new WeightRandomGenerator(), new WeightRandomGenerator(),6);
-            //DoubleArrayChromosome weightValues = new DoubleArrayChromosome(AForge.Genetic.DoubleArrayChromosome.Generate(), new WeightRandomGenerator(), new WeightRandomGenerator(), 6);
             Population weightPop = new Population(40, weightValues, new AriesFF(), new EliteSelection());
             int counter = 0;
-            while (counter < 100 )
+            bool stopEvo = false;
+            AriesFF fintessEval = new AriesFF();
+            double error = 0;
+            while (!stopEvo)
             {
                 weightPop.RunEpoch();
                 counter++;
+                IChromosome best = weightPop.BestChromosome;
+                error = fintessEval.Evaluate(best);
+                stopEvo = counter > 1000 || error < 0.12;
             }
+            Console.WriteLine("Stopped after " + counter.ToString());
+            DoubleArrayChromosome solution = (DoubleArrayChromosome)weightPop.BestChromosome;
+            Console.WriteLine(solution.ToString());
             Console.ReadKey();
         }
     }

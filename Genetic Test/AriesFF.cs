@@ -13,6 +13,8 @@ namespace Genetic_Test
 {
     public class AriesFF : IFitnessFunction
     {
+        NNSim xorSim = new NNSim();
+
         public double Evaluate(IChromosome chromosome)
         {
             DoubleArrayChromosome doubleChromosome = (DoubleArrayChromosome)chromosome;
@@ -24,11 +26,19 @@ namespace Genetic_Test
             for (int i = 0; i < d_genes.Length; i++)
             {
                 d_genes[i] = Double.Parse(s_genes[i]);
-                sum +=  Double.Parse(s_genes[i]);
+                
             }
 
-            Console.WriteLine(sum);
-            return sum;
+            double error = xorSim.getError(d_genes);
+            if (error == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                return 1 / xorSim.getError(d_genes);
+            }
+
         }
     }
 }

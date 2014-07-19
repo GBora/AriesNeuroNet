@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="491f9bd2-c70e-4c55-8bae-862868e2e79b" name="Sequence1" linkedPackageId="e8f214ff-6bc2-4c7d-a14b-8219d8920aa8" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="06034e21-eba9-448b-99b2-4a1dc30dec96" name="Sequence1" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <elementDefinition Id="fcd39ceb-c736-47aa-ac14-a01abff39f1c" />
+        <fragments>
+          <behaviorExecutionSpecification Id="e01d4301-97eb-4769-b14c-879fb3ddaee1" name="BehaviorExecutionSpecification1">
+            <elementDefinition Id="4ba7543f-333a-4f23-b4be-560dcee21f13" />
+            <coveredLifelines>
+              <lifelineMoniker Id="5013e180-bc41-4414-9178-a8b2d81afbd9" LastKnownName="Neuron" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="b731ce23-2d3b-4833-b173-61f99f439c4a" LastKnownName="ExecutionOccurrenceSpecification2" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="263f6d64-9440-4b89-8fe8-fb10c4f51342" LastKnownName="ExecutionOccurrenceSpecification1" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="6bbc8ada-befc-4894-a214-119dd3957b59" LastKnownName="MessageOccurrenceSpecification2" />
+              <messageOccurrenceSpecificationMoniker Id="7ec5628f-7219-46f9-acde-c8e98fdd3cb2" LastKnownName="MessageOccurrenceSpecification3" />
+              <executionOccurrenceSpecificationMoniker Id="e12d8f3f-8912-4df1-a10d-a87de8b1d3a4" LastKnownName="ExecutionOccurrenceSpecification5" />
+              <executionOccurrenceSpecificationMoniker Id="3b5149d9-9d74-49ee-a9a9-d223d71c944c" LastKnownName="ExecutionOccurrenceSpecification6" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="263f6d64-9440-4b89-8fe8-fb10c4f51342" name="ExecutionOccurrenceSpecification1">
+            <elementDefinition Id="e68be789-36b6-4ac0-bb6f-71cb7edb3cf7" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="effe599c-7402-4f8b-97d3-5a942f46c5d1" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5013e180-bc41-4414-9178-a8b2d81afbd9" LastKnownName="Neuron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="73367e90-78eb-4e77-873a-bcfb3f9ab778" name="MessageOccurrenceSpecification1">
+            <elementDefinition Id="b22cea96-9ea7-45c4-b2f8-46c5fc513523" />
+            <covered>
+              <lifelineMoniker Id="ca2da301-da34-44fb-a579-a16df8889dc7" LastKnownName="Neuron Input" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="6bbc8ada-befc-4894-a214-119dd3957b59" name="MessageOccurrenceSpecification2">
+            <elementDefinition Id="f6519de3-2f1b-4c38-a094-b2cd9fa6097e" />
+            <covered>
+              <lifelineMoniker Id="5013e180-bc41-4414-9178-a8b2d81afbd9" LastKnownName="Neuron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="2380a0ea-ea2b-44f9-b154-3b46361e939a" name="BehaviorExecutionSpecification2">
+            <elementDefinition Id="117a3a1a-08df-4891-897b-125b6cd630d4" />
+            <coveredLifelines>
+              <lifelineMoniker Id="5adf500c-5425-474f-b415-9ecf9cc44b91" LastKnownName="Fire Function" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="efde71d1-cefa-4692-842f-4a6917bfd336" LastKnownName="ExecutionOccurrenceSpecification4" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="103c6c15-4399-4bcb-85fa-b187cd08caf1" LastKnownName="ExecutionOccurrenceSpecification3" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="1b00f564-f5fb-4652-a319-8215707b3dce" LastKnownName="MessageOccurrenceSpecification4" />
+              <messageOccurrenceSpecificationMoniker Id="c41d76b7-a663-4ee4-9f5a-d40ad05bb8f0" LastKnownName="MessageOccurrenceSpecification5" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="103c6c15-4399-4bcb-85fa-b187cd08caf1" name="ExecutionOccurrenceSpecification3">
+            <elementDefinition Id="201a116c-4f3e-40cc-a668-9db8103f8487" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="6e89f3ae-d92f-41d4-83e7-69539c293a6e" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5adf500c-5425-474f-b415-9ecf9cc44b91" LastKnownName="Fire Function" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="1b00f564-f5fb-4652-a319-8215707b3dce" name="MessageOccurrenceSpecification4">
+            <elementDefinition Id="5d510e47-4b30-4f5f-bb84-7e48f32426f6" />
+            <covered>
+              <lifelineMoniker Id="5adf500c-5425-474f-b415-9ecf9cc44b91" LastKnownName="Fire Function" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="7ec5628f-7219-46f9-acde-c8e98fdd3cb2" name="MessageOccurrenceSpecification3">
+            <elementDefinition Id="dede5bea-19ae-4d23-8dc3-772b2d42cbff" />
+            <covered>
+              <lifelineMoniker Id="5013e180-bc41-4414-9178-a8b2d81afbd9" LastKnownName="Neuron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="5a30a132-7710-4b12-8090-71bed31f3109" name="BehaviorExecutionSpecification3">
+            <elementDefinition Id="626fe20f-5d54-410c-932d-49d3042f3481" />
+            <coveredLifelines>
+              <lifelineMoniker Id="5013e180-bc41-4414-9178-a8b2d81afbd9" LastKnownName="Neuron" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="3b5149d9-9d74-49ee-a9a9-d223d71c944c" LastKnownName="ExecutionOccurrenceSpecification6" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="e12d8f3f-8912-4df1-a10d-a87de8b1d3a4" LastKnownName="ExecutionOccurrenceSpecification5" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="bb25aed4-0d22-41e4-bbcf-04ca98b12ec8" LastKnownName="MessageOccurrenceSpecification6" />
+              <messageOccurrenceSpecificationMoniker Id="e2f18eec-bd2f-4d04-a146-e5854c528cd9" LastKnownName="MessageOccurrenceSpecification7" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="e12d8f3f-8912-4df1-a10d-a87de8b1d3a4" name="ExecutionOccurrenceSpecification5">
+            <elementDefinition Id="b3dfc3bd-db49-4511-aae7-34e5608226f4" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="3bd4de97-119a-4883-85a6-ad6eb9778808" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5013e180-bc41-4414-9178-a8b2d81afbd9" LastKnownName="Neuron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="c41d76b7-a663-4ee4-9f5a-d40ad05bb8f0" name="MessageOccurrenceSpecification5">
+            <elementDefinition Id="16bdb66a-bd3d-48f1-a6fa-6f94a6db729e" />
+            <covered>
+              <lifelineMoniker Id="5adf500c-5425-474f-b415-9ecf9cc44b91" LastKnownName="Fire Function" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="bb25aed4-0d22-41e4-bbcf-04ca98b12ec8" name="MessageOccurrenceSpecification6">
+            <elementDefinition Id="d5507a91-ec20-4989-aded-dd1583c8dbc8" />
+            <covered>
+              <lifelineMoniker Id="5013e180-bc41-4414-9178-a8b2d81afbd9" LastKnownName="Neuron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="aaef608d-825f-43c7-9e18-1a750db250cd" name="BehaviorExecutionSpecification4">
+            <elementDefinition Id="c650be29-d486-47e0-913f-d0433e218be5" />
+            <coveredLifelines>
+              <lifelineMoniker Id="e93d0312-b229-44a0-a000-43db86aeb1ed" LastKnownName="Neuron Output" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="04ef4025-3fb0-400c-b3ac-eb6cbc44760c" LastKnownName="ExecutionOccurrenceSpecification8" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="1e1ce9a5-98d4-4e03-b99a-2f5fcd3495ed" LastKnownName="ExecutionOccurrenceSpecification7" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="53974093-99cd-47d0-906d-da63c2bcbe08" LastKnownName="MessageOccurrenceSpecification8" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="1e1ce9a5-98d4-4e03-b99a-2f5fcd3495ed" name="ExecutionOccurrenceSpecification7">
+            <elementDefinition Id="c88aee0c-09a6-49a8-9061-3eecd0c24818" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="89c75ef5-1c86-42ac-95e0-96e483dd7628" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="e93d0312-b229-44a0-a000-43db86aeb1ed" LastKnownName="Neuron Output" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="efde71d1-cefa-4692-842f-4a6917bfd336" name="ExecutionOccurrenceSpecification4">
+            <elementDefinition Id="724c433e-9565-4b7b-a508-6c4e363ed678" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="eb0e2dda-693c-4bb0-8128-e07b71cb6c9b" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5adf500c-5425-474f-b415-9ecf9cc44b91" LastKnownName="Fire Function" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="e2f18eec-bd2f-4d04-a146-e5854c528cd9" name="MessageOccurrenceSpecification7">
+            <elementDefinition Id="391ce200-7a75-4051-b92b-da2f83f79148" />
+            <covered>
+              <lifelineMoniker Id="5013e180-bc41-4414-9178-a8b2d81afbd9" LastKnownName="Neuron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="53974093-99cd-47d0-906d-da63c2bcbe08" name="MessageOccurrenceSpecification8">
+            <elementDefinition Id="377a16f8-d65b-43ff-a53f-2c3704c431c9" />
+            <covered>
+              <lifelineMoniker Id="e93d0312-b229-44a0-a000-43db86aeb1ed" LastKnownName="Neuron Output" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="3b5149d9-9d74-49ee-a9a9-d223d71c944c" name="ExecutionOccurrenceSpecification6">
+            <elementDefinition Id="7ffab394-f39f-4478-93bd-3654522d47da" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="0ea5d67b-e268-405e-be71-3587734fa865" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5013e180-bc41-4414-9178-a8b2d81afbd9" LastKnownName="Neuron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="04ef4025-3fb0-400c-b3ac-eb6cbc44760c" name="ExecutionOccurrenceSpecification8">
+            <elementDefinition Id="ab6aa679-031d-4879-bbfa-ae20f291b731" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="90068bb5-9eb9-47e9-83df-bff684c71f10" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="e93d0312-b229-44a0-a000-43db86aeb1ed" LastKnownName="Neuron Output" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="b731ce23-2d3b-4833-b173-61f99f439c4a" name="ExecutionOccurrenceSpecification2">
+            <elementDefinition Id="5874aef9-eb72-45fe-b0d4-c178c636d1c2" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="c98a6c5b-425f-47d5-b105-921665a38bfc" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5013e180-bc41-4414-9178-a8b2d81afbd9" LastKnownName="Neuron" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline Id="5013e180-bc41-4414-9178-a8b2d81afbd9" name="Neuron" isActor="false" lifelineDisplayName="Neuron">
+            <elementDefinition Id="de2b38be-fe29-4dd0-90b3-f2f26155c5c8" />
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="263f6d64-9440-4b89-8fe8-fb10c4f51342" LastKnownName="ExecutionOccurrenceSpecification1" />
+              <executionOccurrenceSpecificationMoniker Id="b731ce23-2d3b-4833-b173-61f99f439c4a" LastKnownName="ExecutionOccurrenceSpecification2" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="ca2da301-da34-44fb-a579-a16df8889dc7" name="Neuron Input" isActor="false" lifelineDisplayName="Neuron Input">
+            <elementDefinition Id="9840e23b-570c-4aa2-b185-a8524d3f0dfa" />
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="73367e90-78eb-4e77-873a-bcfb3f9ab778" LastKnownName="MessageOccurrenceSpecification1" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="5adf500c-5425-474f-b415-9ecf9cc44b91" name="Fire Function" isActor="false" lifelineDisplayName="Fire Function">
+            <elementDefinition Id="afe2b8d1-140d-4ac3-8e70-b2379b6bdd7c" />
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="103c6c15-4399-4bcb-85fa-b187cd08caf1" LastKnownName="ExecutionOccurrenceSpecification3" />
+              <executionOccurrenceSpecificationMoniker Id="efde71d1-cefa-4692-842f-4a6917bfd336" LastKnownName="ExecutionOccurrenceSpecification4" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="e93d0312-b229-44a0-a000-43db86aeb1ed" name="Neuron Output" isActor="false" lifelineDisplayName="Neuron Output">
+            <elementDefinition Id="5292d1e3-3746-49f9-b48f-e36b6ee819b5" />
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="1e1ce9a5-98d4-4e03-b99a-2f5fcd3495ed" LastKnownName="ExecutionOccurrenceSpecification7" />
+              <executionOccurrenceSpecificationMoniker Id="04ef4025-3fb0-400c-b3ac-eb6cbc44760c" LastKnownName="ExecutionOccurrenceSpecification8" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message Id="19b58f89-58ab-46ae-bc37-d084c53f85ca" name="Raw Input" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="b405f13e-65a5-48b1-a1d1-7430942140af" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="73367e90-78eb-4e77-873a-bcfb3f9ab778" LastKnownName="MessageOccurrenceSpecification1" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="6bbc8ada-befc-4894-a214-119dd3957b59" LastKnownName="MessageOccurrenceSpecification2" />
+            </receiveEvent>
+          </message>
+          <message Id="377a59db-7fc9-4ebc-a914-a2df06c7a1ea" name="Weighted Input" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="0f7bfd6a-4bdc-4034-bca2-b7e20cbf5318" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="7ec5628f-7219-46f9-acde-c8e98fdd3cb2" LastKnownName="MessageOccurrenceSpecification3" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="1b00f564-f5fb-4652-a319-8215707b3dce" LastKnownName="MessageOccurrenceSpecification4" />
+            </receiveEvent>
+          </message>
+          <message Id="6d368481-ff8a-474c-aa23-70ef5ee94e77" name="Neuron Potential" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="f0201d1a-a198-469b-b178-d87135d6cea8" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="c41d76b7-a663-4ee4-9f5a-d40ad05bb8f0" LastKnownName="MessageOccurrenceSpecification5" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="bb25aed4-0d22-41e4-bbcf-04ca98b12ec8" LastKnownName="MessageOccurrenceSpecification6" />
+            </receiveEvent>
+          </message>
+          <message Id="94477891-247c-4bf4-a2d8-14aae3d37a07" name="Weighted Output" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="a1d41cc1-128b-46d0-8678-06b65040e86f" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="e2f18eec-bd2f-4d04-a146-e5854c528cd9" LastKnownName="MessageOccurrenceSpecification7" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="53974093-99cd-47d0-906d-da63c2bcbe08" LastKnownName="MessageOccurrenceSpecification8" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="effe599c-7402-4f8b-97d3-5a942f46c5d1" name="ExecutionEvent">
+        <elementDefinition Id="95f15b9b-3577-498e-85d1-d0bbb1f9de5f" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="c98a6c5b-425f-47d5-b105-921665a38bfc" name="ExecutionEvent">
+        <elementDefinition Id="fbd2cea8-51b9-4bf7-a58c-6b3199160ded" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="6e89f3ae-d92f-41d4-83e7-69539c293a6e" name="ExecutionEvent">
+        <elementDefinition Id="86e5a922-8f0c-4d94-baea-1533f2173662" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="eb0e2dda-693c-4bb0-8128-e07b71cb6c9b" name="ExecutionEvent">
+        <elementDefinition Id="bad07869-72a2-4876-b0e0-191de8d58e3c" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="3bd4de97-119a-4883-85a6-ad6eb9778808" name="ExecutionEvent">
+        <elementDefinition Id="cbba1848-99af-40a2-b38e-867f2c7521a9" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="0ea5d67b-e268-405e-be71-3587734fa865" name="ExecutionEvent">
+        <elementDefinition Id="a3437326-e295-43a0-afbb-79aa0a588e96" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="89c75ef5-1c86-42ac-95e0-96e483dd7628" name="ExecutionEvent">
+        <elementDefinition Id="982dc080-84ca-4240-8475-bf0bfd0bfca7" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="90068bb5-9eb9-47e9-83df-bff684c71f10" name="ExecutionEvent">
+        <elementDefinition Id="1618dc49-a569-4b92-bf18-449c27376d76" />
+      </executionEvent>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="e8f214ff-6bc2-4c7d-a14b-8219d8920aa8" name="ModelingProject1">
+    <elementDefinition Id="e6eade1f-ed25-4169-8b68-bfed298b1453" />
+    <profileInstances>
+      <packageHasProfileInstances Id="e168e270-a2d8-4691-9a15-7a7d79fbcd16">
+        <profileInstance Id="ae201336-dc44-40e0-b20d-46c52ac4c641" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="7bab99ab-2295-47bd-b990-4b076875a810">
+        <profileInstance Id="3ccfd51a-1d4a-4e27-9c4b-4e38af00f641" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</SequenceDesignerModel>

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AriesNeuroNet.FireRules.FireRuleBase">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAEAAAAAAAAAAAAICAAAAAAAAAAAAA=</HashCode>
+      <FileName>FireRules\FireRuleBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AriesNeuroNet.FireRules.SigmoidFireRule">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAEAAAAAAA=</HashCode>
+      <FileName>FireRules\SigmoidFireRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AriesNeuroNet.FireRules.SinglePoleFR">
+    <Position X="3.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAEAAAAAAAAAAAAICAAAAAAAAAAAAA=</HashCode>
+      <FileName>FireRules\SinglePoleFR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AriesNeuroNet.FireRules.SinglePoleSigFR" Collapsed="true">
+    <Position X="6.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FireRules\SinglePoleSigFR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AriesNeuroNet.FireRules.SumFireRule">
+    <Position X="9.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAICAAAAAAAAAAAAA=</HashCode>
+      <FileName>FireRules\SumFireRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AriesNeuroNet.InputOutput.NeuronPort">
+    <Position X="15" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAABAEQAAAAAAAIAAAAAAgAAAgAAAAAIA=</HashCode>
+      <FileName>InputOutputs\NeuronPort.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AriesNeuroNet.Network.Layer">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Network\Layer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AriesNeuroNet.Network.NetworkBase">
+    <Position X="14" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Network\NetworkBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AriesNeuroNet.Network.PerceptronNetwork">
+    <Position X="13.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIIAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Network\PerceptronNetwork.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AriesNeuroNet.Network.SimpleNetwork">
+    <Position X="16.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAIAACAAAAAAAAAIAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Network\SimpleNetwork.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AriesNeuroNet.Neurons.Neuron">
+    <Position X="1.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Neurons\Neuron.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AriesNeuroNet.Neurons.NeuronBase">
+    <Position X="4.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAIAAAgggABEEAAAAAhAACAAAMBAAAAAAAAgAABA=</HashCode>
+      <FileName>Neurons\NeuronBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AriesNeuroNet.Training.ErrorHistory">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Training\ErrorHistory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AriesNeuroNet.Training.NetworkTrainer">
+    <Position X="24.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAYAAAAAAAAAAAAAAAACAAACAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Training\NetworkTrainer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AriesNeuroNet.Training.PerceptronTrainer">
+    <Position X="29.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAACAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Training\PerceptronTrainer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AriesNeuroNet.Training.TrainerBase">
+    <Position X="24.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Training\TrainerBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AriesNeuroNet.Training.TrainingRow">
+    <Position X="10.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAQAAAA=</HashCode>
+      <FileName>Training\TrainingRow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AriesNeuroNet.Training.TrainingTemplate">
+    <Position X="12.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAIAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Training\TrainingTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

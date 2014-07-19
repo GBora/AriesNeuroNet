@@ -1,4 +1,3 @@
-C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\Genetic Test\obj\x86\Debug\Genetic Test.csprojResolveAssemblyReference.cache
 C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\Genetic Test\bin\Debug\Genetic Test.exe
 C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\Genetic Test\bin\Debug\Genetic Test.pdb
 C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\Genetic Test\bin\Debug\AForge.dll
@@ -11,3 +10,4 @@ C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\Genetic Test
 C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\Genetic Test\bin\Debug\AForge.Math.xml
 C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\Genetic Test\obj\x86\Debug\Genetic Test.exe
 C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\Genetic Test\obj\x86\Debug\Genetic Test.pdb
+C:\Users\George\Documents\Visual Studio 2010\Projects\AriesNeuroNet\Genetic Test\obj\x86\Debug\Genetic Test.csprojResolveAssemblyReference.cache
